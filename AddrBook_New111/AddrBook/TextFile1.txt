@@ -1,0 +1,26 @@
+﻿[로그인을 위한 멤버 테이블]
+
+create table member (
+	id varchar2(10) primary key,
+	pwd varchar2(10)
+)
+
+insert into member (id, pwd) values ('onj','onj');
+commit;
+
+
+[주소록 데이터 저장을 위한 테이블]
+
+create table addrbook (
+	name varchar2(20) primary key,
+	sex varchar2(1),
+	addr varchar2(50),
+	tel varchar2(20)
+)
+
+insert into addrbook values ('김길동','M','서울 구로구','851-4790');
+insert into addrbook values ('나길숙','F','서울 강남구','777-4790');
+commit;
+
+
+
